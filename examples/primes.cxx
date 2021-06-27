@@ -11,10 +11,9 @@ bool IsPrime(int n)
  return true;
 }
 
-
 int main()
 {
-    for (int i = 2; i< 100; i++)
+    for (int i = 2; i< 100000; i++)
     {
         if (IsPrime(i))
            std::cout <<i<<"\n";
