@@ -2,8 +2,10 @@ build
 # Ignore my test file output
 *.log
 *.speed
-
+# Ignore build temporary files
 CMakeFiles
 Makefile
 cmake_install.cmake
 CMakeCache.txt
+
+*.exe
