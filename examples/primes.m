@@ -1,4 +1,4 @@
-# In Octave a script cannot start with the keyword 'function'
+%% In Octave a script cannot start with the keyword 'function'
 disp("Running")
 
 function retval = primes(n)
