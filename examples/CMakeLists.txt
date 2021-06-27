@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-set (CMAKE_CXX_STANDARD 11)
+set (CMAKE_CXX_STANDARD 17)
 
 # set the project name
 project(CAPS2021)
@@ -10,13 +10,13 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
 
-set(CMAKE_CXX_FLAGS "-Wall -Wextra")
-set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -pthread")
+set(CMAKE_CXX_FLAGS_DEBUG "-g ")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
 
 # Find all examples
-file(GLOB MAINS ${PROJECT_SOURCE_DIR}/examples/*.cxx)
+file(GLOB MAINS ${PROJECT_SOURCE_DIR}/*.cxx)
 
 # Setup all programs in mains folder
 foreach(MAIN ${MAINS})
