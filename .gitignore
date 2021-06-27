@@ -1,1 +1,9 @@
 build
+# Ignore my test file output
+*.log
+*.speed
+
+CMakeFiles
+Makefile
+cmake_install.cmake
+CMakeCache.txt
